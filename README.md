@@ -16,11 +16,6 @@ This is a small multifunctional datapack library reduced repetitive works.
   For mod compatibility.  
   License [LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
-### Bookshelf Tags (namespace: bookshelf)
-
-- Tags from [Bookshelf](https://modrinth.com/mod/bookshelf-lib)  
-  For mod compatibility.  
-  License [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ### Retina files (namespace: retina)
 
@@ -160,6 +155,7 @@ Add your functions in tags to run function every times event happen:
 
   - `stored_day dilib..data`: Last tick day
   - `current_day dilib..data`: Current day
+  - `step dilib..temp`: Day stepped
 
 - `tag/functions #dilib:world/daytime_changed`:
 
@@ -179,11 +175,6 @@ Add your functions in tags to run function every times event happen:
   为兼容模组添加。  
   许可证 [LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
-### Bookshelf Tags (namespace: bookshelf)
-
-- 标签来自 [Bookshelf](https://modrinth.com/mod/bookshelf-lib)  
-  为兼容模组添加。  
-  许可证 [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ### Retina files (namespace: retina)
 
@@ -324,6 +315,7 @@ Add your functions in tags to run function every times event happen:
 
   - `stored_day dilib..data`: 上一刻的日期
   - `current_day dilib..data`: 当前日期
+  - `step dilib..temp`: 步进的日期
 
 - `tag/functions #dilib:world/daytime_changed`:
 

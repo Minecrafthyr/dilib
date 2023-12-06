@@ -1,4 +1,3 @@
-
 data modify storage dilib:data temp.Item set from entity @s Item
 
 execute if data storage dilib:data temp{Item:{tag:{clear:1b}}} run kill

@@ -1,5 +1,5 @@
 advancement revoke @s only dilib:func/t/sneak_end
-function dilib:debug/action {text:'{"text":"sneak_end","extra":[" ",{"score":{"name":"@s","objective":"dilib..sneak_time"}}]}'}
+execute if entity @s[tag=dilib..debug] run function dilib:debug/action {text:'{"text":"sneak_end","extra":[" ",{"score":{"name":"@s","objective":"dilib..sneak_time"}}]}'}
 
 function #dilib:player/sneaking
 

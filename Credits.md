@@ -1,4 +1,4 @@
 - [Fabric API](https://modrinth.com/mod/fabric-api) / Fabric Convention Tags(v1-1.5.8 for 1.20.3)
-- [Taglib](https://modrinth.com/datapack/taglib)(for 1.20.2)
-- [Retina](https://modrinth.com/datapack/retina)(v2.3.5 for 1.20.2)
-- [Moxlib](https://modrinth.com/datapack/moxlib)(v0.5.9 for 1.20.2)
+- [Taglib](https://modrinth.com/datapack/taglib)(for 1.20.2) by [HeDeAnTheonlyone](https://github.com/HeDeAnTheonlyone)
+- [Retina](https://modrinth.com/datapack/retina)(v2.3.5 for 1.20.2) by [Nico314159](https://github.com/Nico314159)
+- [Moxlib](https://modrinth.com/datapack/moxlib)(v0.5.9 for 1.20.2) by [Moxvallix](https://moxvallix.com/)

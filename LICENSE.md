@@ -33,3 +33,6 @@ Path:
 
 Else:  
 [MIT License](https://mit-license.org/)
+
+
+© [Minecraft_hyr](https://github.com/Minecrafthyr)

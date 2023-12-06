@@ -4,7 +4,7 @@ execute unless score damage dilib..temp matches -2147483648..2147483647 run scor
 execute unless data storage dilib:data temp.id run data modify storage dilib:data temp.id set value "minecraft:air"
 execute unless data storage dilib:data temp.tag run data modify storage dilib:data temp.tag set value ""
 execute unless data storage dilib:data temp.Count run data modify storage dilib:data temp.Count set value 1b
-execute unless data storage dilib:data temp.slot run return 0
+execute unless data storage dilib:data temp.slot run return fail
 
 
 data modify entity 94a5e3be-355b-ee03-8f48-70c43c0025f9 HandItems[0] set from storage dilib:data temp

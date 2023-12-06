@@ -1,5 +1,5 @@
 advancement revoke @s only dilib:func/t/respawn
-function dilib:debug/action {text:'"respawn"'}
+execute if entity @s[tag=dilib..debug] run function dilib:debug/action {text:'"respawn"'}
 
 function #dilib:player/respawn
 
