@@ -1,0 +1,1 @@
+function dilib:presets/uuid_pointing {UUID:[I;0,12301,-1616430428,1882471739],command:"say 0"}

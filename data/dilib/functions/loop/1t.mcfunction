@@ -1,0 +1,19 @@
+schedule function dilib:loop/1t 1t
+
+# Player
+#See advancements
+scoreboard players add @a[predicate=dilib:flags/is_sneaking/true] dilib..sneak_time 1
+
+execute as @a unless score @s menus matches -2147483648..2147483647 run scoreboard players enable @s menus
+
+# Entity
+execute as @e[tag=!dilib..checked] run function dilib:loop/1t/new_entity
+
+# World
+execute store result score current_day dilib..data run time query day
+execute unless score stored_day dilib..data = current_day dilib..data run function dilib:loop/1t/events/day_changed
+execute store result score current_daytime dilib..data run time query daytime
+execute unless score stored_daytime dilib..data = current_daytime dilib..data run function dilib:loop/1t/events/daytime_changed
+execute store result score current_gametime dilib..data run time query gametime
+
+function #dilib:loop/1t
