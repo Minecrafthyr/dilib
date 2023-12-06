@@ -1,0 +1,5 @@
+- [Fabric API](https://modrinth.com/mod/fabric-api) / Fabric Convention Tags(v0.90.7 for 1.20.2)
+- [Bookshelf](https://modrinth.com/mod/bookshelf-lib)(v21.0.11 for 1.20.2)
+- [Taglib](https://modrinth.com/datapack/taglib)(for 1.20.2)
+- [Retina](https://modrinth.com/datapack/retina)(v2.3.5 for 1.20.2)
+- [Moxlib](https://modrinth.com/datapack/moxlib)(v0.5.9 for 1.20.2)
