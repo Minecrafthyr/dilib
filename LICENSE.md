@@ -1,17 +1,10 @@
 You need to follow the license from original files / project / pack.
 
-If you want to use files from **[Bookshelf](https://modrinth.com/mod/bookshelf-lib)**(v1-1.5.8 for 1.20.3):  
-[LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)  
-Path:
-
-- data/bookshelf/tags/\*
-- (A part of) data/c/tags/\*
-
-If you want to use files from **[Fabric API](https://modrinth.com/mod/fabric-api) / Fabric Convention Tags**(v0.90.7 for 1.20.2):  
+If you want to use files from **[Fabric API](https://modrinth.com/mod/fabric-api) / Fabric Convention Tags**(v1-1.5.8 for 1.20.3):  
 [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0.html)  
 Path:
 
-- (A part of) data/c/tags/\*
+- data/c/tags/\*
 
 If you want to use files from **[Taglib](https://modrinth.com/datapack/taglib)**(for 1.20.2):  
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
@@ -37,7 +30,6 @@ Path:
 - data/dilib/predicates/vehicle.json
 - data/dilib/predicates/passenger.json
 - data/dilib/functions/presets/uuid_pointing.mcfunction (modified)
-
 
 Else:  
 [MIT License](https://mit-license.org/)
