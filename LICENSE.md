@@ -1,6 +1,6 @@
 You need to follow the license from original files / project / pack.
 
-If you want to use files from **[Bookshelf](https://modrinth.com/mod/bookshelf-lib)**(v21.0.11 for 1.20.2):  
+If you want to use files from **[Bookshelf](https://modrinth.com/mod/bookshelf-lib)**(v1-1.5.8 for 1.20.3):  
 [LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)  
 Path:
 

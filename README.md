@@ -3,8 +3,8 @@
 This is a small multifunctional datapack library reduced repetitive works.
 
 - Author: Minecraft_hyr
-- Version: 2.3
-- Supported MC versions: 1.20.2
+- Version: 2.4
+- Supported MC versions: 1.20.3
 
 ## Feature List
 
@@ -77,7 +77,7 @@ This is a small multifunctional datapack library reduced repetitive works.
 
 - `/function dilib:debug`:
 
-  - First execute: Show particles at marker, notification when function loaded.
+  - First execute: Show particles at marker, notification when function loaded, show player's dilib only actions in action bar.
   - Second execute: Remove all features.
 
 Add your functions in tags to run function every times event happen:
@@ -239,7 +239,7 @@ Add your functions in tags to run function every times event happen:
 
 - `/function dilib:debug`:
 
-  - 第一次执行: 每一秒在标记处显示粒子，函数加载完毕时进行反馈
+  - 第一次执行: 每一秒在标记处显示粒子，函数加载完毕时进行反馈，显示玩家在DiLib专属的动作于快捷栏标题。
   - 第二次执行: 清除上述所有特性
 
 将你的函数加入标签，函数会在事件发生时运行：
