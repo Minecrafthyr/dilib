@@ -1,6 +1,6 @@
 data modify storage dilib:data temp.Item set from entity @s Item
 
-execute if data storage dilib:data temp{Item:{tag:{clear:1b}}} run kill
+execute if data storage dilib:data temp{Item:{tag:{dilib:{clear:1b}}}} run kill
 execute if data storage dilib:data temp{Item:{id:"minecraft:knowledge_book"}} run kill
 
 item replace entity 94a5e3be-355b-ee03-8f48-70c43c0025f9 weapon.mainhand with air

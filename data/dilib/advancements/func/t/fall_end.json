@@ -1,1 +1,0 @@
-{"criteria":{"fall_end":{"conditions":{"player":[{"condition":"minecraft:value_check","range":{"min":1},"value":{"score":"dilib.custom..fall_one_cm","target":"this","type":"minecraft:score"}},{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{OnGround:1b}"}}]},"trigger":"minecraft:tick"}},"rewards":{"function":"dilib:adv/t/fall_end"}}

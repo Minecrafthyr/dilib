@@ -30,7 +30,7 @@ This is a small multifunctional datapack library reduced repetitive works.
 
 - If player join the game and there is only 1 player, game will run `function #minecraft:load` (reload only functions)
 - Stored some **tags & item_modifiers & predicates**
-- If a item has tag `{clear:1b}`, it will be clear in inventory / in world
+- If a item has tag `{dilib:{clear:1b}}`, it will be clear in inventory / in world
 
 - `/function dilib:presets/objectives`:  
   **This function will load when install.**
@@ -189,7 +189,7 @@ Add your functions in tags to run function every times event happen:
 
 - 如果玩家加入世界且只有一个玩家，会执行 `function #minecraft:load` (只重载函数)
 - 存放了一些**标签、物品修饰器、谓词**
-- 如果一个物品有标签`{clear:1b}`，它在物品栏或在世界里会被清除。
+- 如果一个物品有标签`{dilib:{clear:1b}}`，它在物品栏或在世界里会被清除。
 
 - `/function dilib:presets/objectives`:  
   **该功能在安装时会被加载。**  

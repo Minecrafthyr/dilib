@@ -1,1 +1,1 @@
-{"criteria":{"clear":{"conditions":{"items":[{"nbt":"{clear:1b}"}]},"trigger":"minecraft:inventory_changed"}},"rewards":{"function":"dilib:adv/ic/clear"}}
+{"criteria":{"clear":{"conditions":{"items":[{"nbt":"{dilib:{clear:1b}}"}]},"trigger":"minecraft:inventory_changed"}},"rewards":{"function":"dilib:adv/ic/clear"}}
