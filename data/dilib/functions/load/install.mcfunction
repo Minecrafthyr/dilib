@@ -17,3 +17,25 @@ scoreboard objectives add dilib..deathCount2 deathCount
 scoreboard objectives add dilib.custom..jump custom:jump
 scoreboard objectives add dilib.custom..fall_one_cm custom:fall_one_cm
 scoreboard objectives add dilib..stored_level dummy
+
+function retina:__load__
+function dilib:loop/1t
+function dilib:loop/2t
+function dilib:loop/3t
+function dilib:loop/4t
+function dilib:loop/5t
+function dilib:loop/6t
+function dilib:loop/7t
+function dilib:loop/8t
+function dilib:loop/9t
+function dilib:loop/10t
+function dilib:loop/11t
+function dilib:loop/12t
+function dilib:loop/13t
+function dilib:loop/14t
+function dilib:loop/15t
+function dilib:loop/16t
+function dilib:loop/17t
+function dilib:loop/18t
+function dilib:loop/19t
+function dilib:loop/1s
