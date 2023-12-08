@@ -45,7 +45,7 @@ This is a small multifunctional datapack library reduced repetitive works.
    ±(2^\*), ±(2^\*-1)  
    10\* 100..1000，-100..-1000
 
-  Add into `storage dilib:const`: `pi:3.141592653589793d,tau:6.283185307179586d,e:2.718281828459045d`
+  Add into `storage dilib:data const`: `pi:3.141592653589793d,tau:6.283185307179586d,e:2.718281828459045d`
 
 - `/function dilib:presets/durability`:  
   Calculate damage to item for unbreaking item.  
@@ -138,7 +138,7 @@ Add your functions in tags to run function every times event happen:
   Execute when new item appear.
 
   - `@s` select the armor_stand that mainhand hold the item \*: Modifies to the item will apply to `storage dilib:data temp.Item`
-  - `@e[tag=dilib.this,limit=1]` select the Item (Entity)
+  - `@e[type=item,tag=dilib.this,limit=1]` select the Item (Entity)
   - `storage dilib:data temp.Item` Item data
 
 - `tag/functions #dilib:entity/new/item_check`:
@@ -203,7 +203,7 @@ Add your functions in tags to run function every times event happen:
    ±(2^\*), ±(2^\*-1)  
    10\* -100..1000，-100..-1000
 
-  - 向 `storage dilib:const` 加入: `pi:3.141592653589793d,tau:6.283185307179586d,e:2.718281828459045d`
+  - 向 `storage dilib:data const` 加入: `pi:3.141592653589793d,tau:6.283185307179586d,e:2.718281828459045d`
 
 - `/function dilib:presets/durability`:  
   计算有耐久附魔的物品耐久  
@@ -298,7 +298,7 @@ Add your functions in tags to run function every times event happen:
   新物品出现时触发。
 
   - `@s`主手持有物品的盔甲架 \*: 更改物品会应用于对应的`storage dilib:data temp.Item`上
-  - `@e[tag=dilib.this,limit=1]`选中当前物品（实体）
+  - `@e[type=item,tag=dilib.this,limit=1]`选中当前物品（实体）
   - `storage dilib:data temp.Item`: 物品数据
 
 - `tag/functions #dilib:entity/new/item_check`:
