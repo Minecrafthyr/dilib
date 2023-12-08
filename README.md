@@ -16,11 +16,11 @@ This is a small multifunctional datapack library reduced repetitive works.
   For mod compatibility.  
   License [LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
-
 ### Retina files (namespace: retina)
 
 - See [Retina](https://modrinth.com/datapack/retina)  
-  For raycast.
+  For raycast.  
+  ❗Still at 1.20.2, waiting for update
 
 ### Minecraft files (namespace: minecraft)
 
@@ -71,6 +71,28 @@ This is a small multifunctional datapack library reduced repetitive works.
 
   `tag global.ignore`
 
+- `/function dilib:presets/math/power`  
+  Calculate power.  
+  Input:  
+  `score input dilib..temp`: base  
+  `score power dilib..temp`: power  
+  Output:  
+  `score output dilib..temp`
+
+- `/function dilib:presets/math/sqrt`  
+  Calculate square root.  
+  Input:  
+  `score input dilib..temp`  
+  Output:  
+  `score output dilib..temp`
+
+- `/function dilib:presets/math/unit_fraction`  
+  Calculate unit fraction (Fraction with numerator 1).  
+  Input:  
+  `score input dilib..temp`: denominator  
+  Output:  
+  `score output dilib..temp`
+
 - `/function dilib:debug`:
 
   - First execute: Show particles at marker, notification when function loaded, show player's dilib only actions in action bar.
@@ -104,11 +126,17 @@ Add your functions in tags to run function every times event happen:
 
   Execute when player respawn.
 
+- `tag/functions #dilib:player/sneaking`:
+
+  Execute when player is sneaking.
+
+  - `@s dilib..sneak_time`: Player sneaked time
+
 - `tag/functions #dilib:player/sneak_end`:
 
   Execute when player stops sneaking.
 
-  - `@s dilib.custom..sneak_time`: Player sneaked time when stops sneaking
+  - `@s dilib..sneak_time`: Player sneaked time when stops sneaking
 
 - `tag/functions #dilib:player/jump`:
 
@@ -166,17 +194,17 @@ Add your functions in tags to run function every times event happen:
 
 <details><summary style="font-size:18px">中文</summary>
 
-### Fabric Convention Tags (namespace: c)
+### Fabric Convention Tags (命名空间: c)
 
 - 标签来自 [Fabric API](https://modrinth.com/mod/fabric-api) / Fabric Convention Tags  
   为兼容模组添加。  
   许可证 [LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
-
-### Retina files (namespace: retina)
+### Retina 文件 (命名空间: retina)
 
 - 见 [Retina](https://modrinth.com/datapack/retina)  
-  为视线追踪添加。
+  为视线追踪添加。  
+  ❗ 仍在 1.20.2，等待更新
 
 ### Minecraft 文件(命名空间: minecraft)
 
@@ -226,27 +254,28 @@ Add your functions in tags to run function every times event happen:
   `tag global.ignore`
 
 - `/function dilib:presets/math/power`  
-  计算乘方。
-  输入:  
-  `score input dilib..temp`: 底数
-  `score power dilib..temp`: 指数
-
+  计算乘方。输入:  
+  `score input dilib..temp`: 底数  
+  `score power dilib..temp`: 指数  
   输出:  
   `score output dilib..temp`
 
 - `/function dilib:presets/math/sqrt`  
-  计算平方根。
-  输入:  
-  `score input dilib..temp`: 目标
-
+  计算平方根。输入:  
+  `score input dilib..temp`  
   输出:  
   `score output dilib..temp`
 
-
+- `/function dilib:presets/math/unit_fraction`  
+  计算单位分数（分子为 1 的分数）。  
+  输入:  
+  `score input dilib..temp`: 分母  
+  输出:  
+  `score output dilib..temp`
 
 - `/function dilib:debug`:
 
-  - 第一次执行: 每一秒在标记处显示粒子，函数加载完毕时进行反馈，显示玩家在DiLib专属的动作于快捷栏标题。
+  - 第一次执行: 每一秒在标记处显示粒子，函数加载完毕时进行反馈，显示玩家在 DiLib 专属的动作于快捷栏标题。
   - 第二次执行: 清除上述所有特性
 
 将你的函数加入标签，函数会在事件发生时运行：
@@ -279,11 +308,17 @@ Add your functions in tags to run function every times event happen:
 
   玩家重生时触发。
 
+- `tag/functions #dilib:player/sneaking`:
+
+  玩家潜行时触发。
+
+  - `@s dilib..sneak_time`: 玩家已潜行时间
+
 - `tag/functions #dilib:player/sneak_end`:
 
   玩家潜行结束时触发。
 
-  - `@s dilib.custom..sneak_time`: 玩家潜行结束时的潜行时间
+  - `@s dilib..sneak_time`: 玩家潜行结束时的潜行时间
 
 - `tag/functions #dilib:player/jump`:
 

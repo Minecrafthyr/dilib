@@ -2,3 +2,5 @@ execute if score input dilib..temp matches ..-1 run scoreboard players set outpu
 
 scoreboard players reset power dilib..temp
 scoreboard players reset input dilib..temp
+
+return run scoreboard players get output dilib..temp

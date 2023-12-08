@@ -1,6 +1,5 @@
 # Player
-#See advancements
-
+# See advancements
 
 # Entity
 execute as @e[type=item,tag=!dilib..checked] run function dilib:tick/new_item
