@@ -1,11 +1,9 @@
 # Player
 #See advancements
-scoreboard players add @a[predicate=dilib:flags/is_sneaking/true] dilib..sneak_time 1
 
-execute as @a unless score @s menus matches -2147483648..2147483647 run scoreboard players enable @s menus
 
 # Entity
-execute as @e[tag=!dilib..checked] run function dilib:tick/new_entity
+execute as @e[type=item,tag=!dilib..checked] run function dilib:tick/new_item
 
 # World
 execute store result score current_day dilib..data run time query day

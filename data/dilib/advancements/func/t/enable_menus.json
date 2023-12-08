@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "enable_menus": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:value_check",
+              "range": {
+                "max": 2147483647,
+                "min": -2147483648
+              },
+              "value": {
+                "score": "menus",
+                "target": "this",
+                "type": "minecraft:score"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "dilib:adv/t/enable_menus"
+  }
+}

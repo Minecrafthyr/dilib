@@ -1,1 +1,1 @@
-{"condition":"minecraft:location_check","predicate":{"block":{"state":{"note":15}}}}
+{"condition":"minecraft:location_check","predicate":{"block":{"state":{"note":"15"}}}}

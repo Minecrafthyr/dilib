@@ -1,4 +1,6 @@
+
 tag @s add dilib..this
+forceload add 0 0
 
   data modify storage dilib:data temp.Item set from entity @s Item
 
@@ -7,14 +9,16 @@ tag @s add dilib..this
 
   item replace entity 94a5e3be-355b-ee03-8f48-70c43c0025f9 weapon.mainhand with air
   data modify entity 94a5e3be-355b-ee03-8f48-70c43c0025f9 HandItems[0] set from storage dilib:data temp.Item
-  execute as 94a5e3be-355b-ee03-8f48-70c43c0025f9 run function #dilib:entity/new/item_checker
+  execute as 94a5e3be-355b-ee03-8f48-70c43c0025f9 run function #dilib:entity/new_item_checker
   data modify storage dilib:data temp.Item set from entity 94a5e3be-355b-ee03-8f48-70c43c0025f9 HandItems[0]
 
-  function #dilib:entity/new/item
-
+  function #dilib:entity/new_item
 
   data modify entity @s Item set from storage dilib:data temp.Item
-
   data remove storage dilib:data temp
 
+forceload remove 0 0
 tag @s remove dilib..this
+
+
+tag @s add dilib..checked

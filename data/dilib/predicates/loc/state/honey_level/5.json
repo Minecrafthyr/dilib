@@ -1,1 +1,1 @@
-{"condition":"minecraft:location_check","predicate":{"block":{"state":{"honey_level":5}}}}
+{"condition":"minecraft:location_check","predicate":{"block":{"state":{"honey_level":"5"}}}}

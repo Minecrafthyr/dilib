@@ -1,3 +1,6 @@
-scoreboard players operation output dilib..temp *= input dilib..temp
-scoreboard players remove power dilib..temp 1
-execute if score power dilib..temp matches 1.. run function dilib:presets/math/power/1
+function dilib:presets/math/power/1_loop
+
+scoreboard players reset power dilib..temp
+scoreboard players reset input dilib..temp
+
+return run scoreboard players get output dilib..temp

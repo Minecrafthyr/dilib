@@ -1,1 +1,1 @@
-{"condition":"minecraft:location_check","predicate":{"block":{"state":{"moisture":0}}}}
+{"condition":"minecraft:location_check","predicate":{"block":{"state":{"moisture":"0"}}}}

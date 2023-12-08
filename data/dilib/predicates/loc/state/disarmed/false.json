@@ -1,1 +1,1 @@
-{"condition":"minecraft:location_check","predicate":{"block":{"state":{"disarmed":false}}}}
+{"condition":"minecraft:location_check","predicate":{"block":{"state":{"disarmed":"false"}}}}

@@ -1,1 +1,1 @@
-{"condition":"minecraft:location_check","predicate":{"block":{"state":{"has_bottle_0":true}}}}
+{"condition":"minecraft:location_check","predicate":{"block":{"state":{"has_bottle_0":"true"}}}}

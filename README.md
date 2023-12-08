@@ -4,7 +4,7 @@ This is a small multifunctional datapack library reduced repetitive works.
 
 - Author: Minecraft_hyr
 - Version: 2.4
-- Supported MC versions: 1.20.3
+- Supported MC versions: 1.20.3-1.20.4
 
 ## Feature List
 
@@ -35,7 +35,8 @@ This is a small multifunctional datapack library reduced repetitive works.
 - `/function dilib:presets/objectives`:  
   **This function will load when install.**
 
-  Load some scoreboard objectives. Some display name is official translate text. Can be used for check statics, but please do not modify these scores
+  Load some scoreboard objectives, some display names are official translate text.  
+  Can be used for check statics, but please do not modify these scores
 
 - `/function dilib:presets/const`:  
   **This function will load when install.**  
@@ -129,11 +130,7 @@ Add your functions in tags to run function every times event happen:
 
 | _Entity_
 
-- `tag/functions #dilib:entity/new`:
-
-  Execute when new entity appear.
-
-- `tag/functions #dilib:entity/new/item_checker`:
+- `tag/functions #dilib:entity/new_item_checker`:
 
   Execute when new item appear.
 
@@ -141,7 +138,7 @@ Add your functions in tags to run function every times event happen:
   - `@e[type=item,tag=dilib.this,limit=1]` select the Item (Entity)
   - `storage dilib:data temp.Item` Item data
 
-- `tag/functions #dilib:entity/new/item_check`:
+- `tag/functions #dilib:entity/new_item_check`:
 
   Execute when new item appear.
 
@@ -228,6 +225,25 @@ Add your functions in tags to run function every times event happen:
 
   `tag global.ignore`
 
+- `/function dilib:presets/math/power`  
+  计算乘方。
+  输入:  
+  `score input dilib..temp`: 底数
+  `score power dilib..temp`: 指数
+
+  输出:  
+  `score output dilib..temp`
+
+- `/function dilib:presets/math/sqrt`  
+  计算平方根。
+  输入:  
+  `score input dilib..temp`: 目标
+
+  输出:  
+  `score output dilib..temp`
+
+
+
 - `/function dilib:debug`:
 
   - 第一次执行: 每一秒在标记处显示粒子，函数加载完毕时进行反馈，显示玩家在DiLib专属的动作于快捷栏标题。
@@ -289,11 +305,7 @@ Add your functions in tags to run function every times event happen:
 
 | _实体_
 
-- `tag/functions #dilib:entity/new`:
-
-  新实体出现时触发。
-
-- `tag/functions #dilib:entity/new/item_checker`:
+- `tag/functions #dilib:entity/new_item_checker`:
 
   新物品出现时触发。
 
@@ -301,7 +313,7 @@ Add your functions in tags to run function every times event happen:
   - `@e[type=item,tag=dilib.this,limit=1]`选中当前物品（实体）
   - `storage dilib:data temp.Item`: 物品数据
 
-- `tag/functions #dilib:entity/new/item_check`:
+- `tag/functions #dilib:entity/new_item_check`:
 
   新物品出现时触发。
 
@@ -324,17 +336,5 @@ Add your functions in tags to run function every times event happen:
   - `stored_daytime dilib..data`: 上一刻的今日时间
   - `current_daytime dilib..data`: 当前今日时间
   - `step dilib..temp`: 步进的时间
-
-</details>
-
-## Other information
-
-### Planned features
-
-<details>
-
-More features in 1.20.3:
-
-- Math
 
 </details>
