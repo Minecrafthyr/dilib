@@ -1,0 +1,2 @@
+return run execute if data storage dilib:data input.slot[0] run function dilib:presets/slot_to_string/player/loop
+return run execute if data storage dilib:data input.slot run function dilib:presets/slot_to_string/player/key

@@ -43,3 +43,4 @@ execute if data storage dilib:data temp.Inventory[{Slot:100b,tag:{clear:1b}}] ru
 execute if data storage dilib:data temp.Inventory[{Slot:-106b,tag:{clear:1b}}] run item replace entity @s weapon.offhand with air
 
 advancement revoke @s only dilib:functions/ic/clear
+#data modify storage dilib:data temp.nbt append from entity @s Inventory[{id:"minecraft:bamboo"}].Slot
