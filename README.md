@@ -2,9 +2,8 @@
 
 This is a small multifunctional datapack library reduced repetitive works.
 
-- Author: Minecraft_hyr
-- Version: 2.4
-- Supported MC versions: 1.20.3-1.20.4
+- Version number: 2.4
+- Game versions: 1.20.3-1.20.4
 
 ## Feature List
 
