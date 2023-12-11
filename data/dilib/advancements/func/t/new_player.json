@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "new_player": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "dilib:adv/new_player"
+  }
+}

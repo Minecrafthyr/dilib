@@ -1,1 +1,0 @@
-{"criteria":{"dilib":{"trigger":"minecraft:tick"}},"display":{"announce_to_chat":false,"description":"This is a small multifunctional datapack library reduced repetitive works.","icon":{"item":"minecraft:knowledge_book"},"show_toast":false,"title":"Di Library"},"parent":"global:root","rewards":{"function":"dilib:adv/new_player"}}

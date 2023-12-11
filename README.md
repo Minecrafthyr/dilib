@@ -4,6 +4,8 @@ This is a small multifunctional datapack library reduced repetitive works.
 
 - Version number: 2.4
 - Game versions: 1.20.3-1.20.4
+- Author: [Minecraft_hyr](https://github.com/Minecrafthyr)
+- Project Links: [Modrinth](https://modrinth.com/datapack/dilib), [Github](https://github.com/Minecrafthyr/Di-Library)
 
 ## Feature List
 
@@ -60,10 +62,10 @@ This is a small multifunctional datapack library reduced repetitive works.
   `$(radius)`: NBT `ExplosionRadius`
 
 - `/function dilib:presets/uuid_pointing`:  
-  Select entity that UUID pointing (from [Moxlib](https://modrinth.com/datapack/moxlib)).  
+  Select entity that UUID pointing.  
   Macro:  
-  `$(UUID)`: Target player (only works for player).  
-  `$(command)`: The command will running on target player.
+  `$(UUID)`: Target entity.  
+  `$(command)`: The command will running on target entity.
 
 - `/function dilib:presets/kill`  
   A powerful kill won't keep anything
@@ -242,10 +244,10 @@ Add your functions in tags to run function every times event happen:
   `$(radius)`: NBT `ExplosionRadius`
 
 - `/function dilib:presets/uuid_pointing`:  
-  选中 UUID 指向的实体 (来自 [Moxlib](https://modrinth.com/datapack/moxlib)).  
+  选中 UUID 指向的实体.  
   宏:  
-  `$(UUID)`: 目标玩家 (只对玩家有效)。  
-  `$(command)`: 目标玩家执行的命令。
+  `$(UUID)`: 目标实体  
+  `$(command)`: 目标实体执行的命令。
 
 - `/function dilib:presets/kill`  
   不保留任何东西的 kill
