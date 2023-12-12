@@ -2,7 +2,9 @@
 # See advancements
 
 # Entity
+forceload add 0 0
 execute as @e[type=item,tag=!dilib..checked] run function dilib:tick/new_item
+forceload remove 0 0
 
 # World
 execute store result score current_day dilib..data run time query day
