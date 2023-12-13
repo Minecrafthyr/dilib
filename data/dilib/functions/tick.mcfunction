@@ -3,7 +3,7 @@
 
 # Entity
 forceload add 0 0
-execute as @e[type=item,tag=!dilib..checked] run function dilib:tick/new_item
+  execute as @e[type=item,tag=!dilib..checked] run function dilib:tick/new_item
 forceload remove 0 0
 
 # World

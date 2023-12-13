@@ -1,6 +1,6 @@
-data remove storage dilib:data temp
+scoreboard objectives add dilib..temp dummy
 
-execute unless score damage dilib..temp matches -2147483648..2147483647 run scoreboard players set damage dilib..temp 1
+execute unless score damage dilib..input matches -2147483648..2147483647 run scoreboard players set damage dilib..input 1
 execute unless data storage dilib:data temp.id run data modify storage dilib:data temp.id set value "minecraft:air"
 execute unless data storage dilib:data temp.tag run data modify storage dilib:data temp.tag set value ""
 execute unless data storage dilib:data temp.Count run data modify storage dilib:data temp.Count set value 1b
@@ -17,9 +17,9 @@ execute if score damage dilib..temp matches 1.. unless data storage dilib:data t
 
 function dilib:presets/durability/replace with storage dilib:data temp
 
-scoreboard players reset unbreaking dilib..temp
-scoreboard players reset damage dilib..temp
-scoreboard players reset loop dilib..temp
-scoreboard players reset random dilib..temp
-scoreboard players reset 0 dilib..temp
+scoreboard objectives remove dilib..temp
+
+scoreboard objectives remove dilib..input
+scoreboard objectives add dilib..input dummy
+
 data remove storage dilib:data temp

@@ -6,9 +6,11 @@ execute unless entity 94a5e3be-355b-ee03-8f48-70c43c0025f9 in minecraft:overworl
 
 scoreboard objectives add dilib..data dummy
 scoreboard objectives add dilib..player_id dummy
-scoreboard objectives add dilib..temp dummy
 scoreboard objectives add dilib..sneak_time dummy
 scoreboard objectives add dilib..debug dummy
+scoreboard objectives add dilib..temp dummy
+scoreboard objectives add dilib..input dummy
+scoreboard objectives add dilib..output dummy
 scoreboard objectives add dilib.custom..leave_game custom:leave_game
 scoreboard players reset @a dilib.custom..leave_game
 scoreboard objectives add menus trigger

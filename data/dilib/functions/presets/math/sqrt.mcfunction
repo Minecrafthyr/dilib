@@ -1,11 +1,11 @@
-execute if score input dilib..temp matches ..-1 run return fail
-scoreboard players set output dilib..temp 1225
+execute if score target dilib..input matches ..-1 run return fail
+scoreboard players set result dilib..output 1225
 
 function dilib:presets/math/sqrt/loop
 
-scoreboard players operation 1 dilib..temp = output dilib..temp
-scoreboard players operation 1 dilib..temp *= output dilib..temp
-execute if score 1 dilib..temp > input dilib..temp run scoreboard players remove output dilib..temp 1
+scoreboard players operation 1 dilib..temp = result dilib..output
+scoreboard players operation 1 dilib..temp *= result dilib..output
+execute if score 1 dilib..temp > target dilib..input run scoreboard players remove result dilib..output 1
 
 
 

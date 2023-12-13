@@ -1,6 +1,6 @@
-execute if score input dilib..temp matches ..-1 run scoreboard players set output dilib..temp -1
+execute if score target dilib..input matches ..-1 run scoreboard players set result dilib..output -1
 
-scoreboard players reset power dilib..temp
-scoreboard players reset input dilib..temp
+scoreboard objectives remove dilib..input
+scoreboard objectives add dilib..input dummy
 
-return run scoreboard players get output dilib..temp
+return run scoreboard players get result dilib..output

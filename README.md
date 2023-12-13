@@ -25,7 +25,8 @@ This is a small multifunctional datapack library reduced repetitive works.
 
 ### Minecraft files (namespace: minecraft)
 
-- If you want to embed Di Library in your datapack, please add functions in minecraft tag file
+- If you want to embed tick/load function Di Library in your datapack, please add functions in minecraft tag file
+- If you are not using tick/load functions, you may not need this.
 
 ### Di Library files (namespace: dilib)
 
@@ -66,6 +67,14 @@ This is a small multifunctional datapack library reduced repetitive works.
   Macro:  
   `$(UUID)`: Target entity.  
   `$(command)`: The command will running on target entity.
+
+- `/function dilib:presets/slot_to_string/player`:  
+  Convert input byte data to string can be used in `/item`command.  
+  Input:  
+  `storage dilib:data input.slot`: Byte data。
+  Output:    
+  `storage dilib:data output.slot`: String。
+
 
 - `/function dilib:presets/kill`  
   A powerful kill won't keep anything
@@ -209,7 +218,8 @@ Add your functions in tags to run function every times event happen:
 
 ### Minecraft 文件(命名空间: minecraft)
 
-- 如果你要把 Di Library 内置在你的数据包里，请在你的对应标签文件中添加函数
+- 如果你要把 Di Library 内置的 tick/load 相关的函数在你的数据包里，请在你的对应标签文件中添加函数
+- 如果你没有使用 tick/load 相关的函数，那么你可能不需要这个。
 
 ### Di Library 文件(命名空间: dilib)
 
@@ -248,6 +258,13 @@ Add your functions in tags to run function every times event happen:
   宏:  
   `$(UUID)`: 目标实体  
   `$(command)`: 目标实体执行的命令。
+
+- `/function dilib:presets/slot_to_string/player`:  
+  将输入的 byte 数据转换为可以在`/item`命令中使用的字符串  
+  输入:  
+  `storage dilib:data input.slot`: Byte 数据。
+  输出:    
+  `storage dilib:data output.slot`: 字符串。
 
 - `/function dilib:presets/kill`  
   不保留任何东西的 kill
