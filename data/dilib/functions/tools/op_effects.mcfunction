@@ -1,4 +1,4 @@
-effect give @s minecraft:regeneration infinite 255 true
+effect give @s minecraft:instant_health infinite 10 true
 effect give @s minecraft:night_vision infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:saturation infinite 10 true
