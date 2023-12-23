@@ -14,9 +14,9 @@ scoreboard objectives remove dilib.custom..jump
 scoreboard objectives remove dilib.custom..fall_one_cm
 
 
-
 function dilib:presets/const/uninstall
 function dilib:presets/objectives/uninstall
-data remove storage dilib:data main
+data remove storage dilib:data version
+
 datapack disable "file/Di Library"
 datapack disable "file/Di Library.zip"

@@ -17,11 +17,6 @@ This is a small multifunctional datapack library reduced repetitive works.
   For mod compatibility.  
   License [LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
-### Retina files (namespace: retina)
-
-- See [Retina](https://modrinth.com/datapack/retina)  
-  For raycast.  
-  ❗Still at 1.20.2, waiting for update
 
 ### Minecraft files (namespace: minecraft)
 
@@ -43,10 +38,8 @@ This is a small multifunctional datapack library reduced repetitive works.
 - `/function dilib:presets/const`:  
   **This function will load when install.**  
   Add to the `const` objectives:  
-   -1000..1000  
-   ±(10^\*), ±(10^\*-1)  
-   ±(2^\*), ±(2^\*-1)  
-   10\* 100..1000，-100..-1000
+   -1000..1000
+   ... (See source code)
 
   Add into `storage dilib:data const`: `pi:3.141592653589793d,tau:6.283185307179586d,e:2.718281828459045d`
 
@@ -93,6 +86,13 @@ This is a small multifunctional datapack library reduced repetitive works.
   Calculate square root.  
   Input:  
   `score input dilib..temp`  
+  Output:  
+  `score output dilib..temp`
+
+- `/function dilib:presets/math/avg`  
+  Calculate the average value (anti-overflow). Input:  
+  `score input1 dilib..temp`  
+  `score input2 dilib..temp`  
   Output:  
   `score output dilib..temp`
 
@@ -235,9 +235,7 @@ Add your functions in tags to run function every times event happen:
   **该功能在安装时会被加载。**  
   向计分项 const 里加入:  
    -1000..1000  
-   ±(10^\*), ±(10^\*-1)  
-   ±(2^\*), ±(2^\*-1)  
-   10\* -100..1000，-100..-1000
+   ... (见源码)
 
   - 向 `storage dilib:data const` 加入: `pi:3.141592653589793d,tau:6.283185307179586d,e:2.718281828459045d`
 
@@ -281,6 +279,13 @@ Add your functions in tags to run function every times event happen:
 - `/function dilib:presets/math/sqrt`  
   计算平方根。输入:  
   `score input dilib..temp`  
+  输出:  
+  `score output dilib..temp`
+
+- `/function dilib:presets/math/avg`  
+  计算平均值（防溢出）。输入:  
+  `score input1 dilib..temp`  
+  `score input2 dilib..temp`  
   输出:  
   `score output dilib..temp`
 
