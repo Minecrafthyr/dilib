@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "new": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "dilib.events:presets/new"
+  }
+}

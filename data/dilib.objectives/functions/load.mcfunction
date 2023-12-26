@@ -1,0 +1,1 @@
+execute unless data storage dilib.objectives:data load{version:5} run function dilib.objectives:load/

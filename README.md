@@ -28,12 +28,7 @@ This is a small multifunctional datapack library reduced repetitive works.
 - If player join the game and there is only 1 player, game will run `function #minecraft:load` (reload only functions)
 - Stored some **tags & item_modifiers & predicates**
 - If a item has tag `{dilib:{clear:1b}}`, it will be clear in inventory / in world
-
-- `/function dilib:presets/objectives`:  
-  **This function will load when install.**
-
-  Load some scoreboard objectives, some display names are official translate text.  
-  Can be used for check statics, but please do not modify these scores
+- Load some scoreboard objectives, some display names are official translate text. Can be used for check statics, but please do not modify these scores
 
 - `/function dilib:presets/const`:  
   **This function will load when install.**  
@@ -182,23 +177,6 @@ Add your functions in tags to run function every times event happen:
 
   - `storage dilib:data temp.Item` Item data \*: Modifies to the Item data will apply to Item (Entity)
 
-| _World_
-
-- `tag/functions #dilib:world/day_changed`:
-
-  Execute when day changed.
-
-  - `stored_day dilib..data`: Last tick day
-  - `current_day dilib..data`: Current day
-  - `step dilib..temp`: Day stepped
-
-- `tag/functions #dilib:world/daytime_changed`:
-
-  Execute when daytime changed.
-
-  - `stored_daytime dilib..data`: Last tick daytime
-  - `current_daytime dilib..data`: Current daytime
-  - `step dilib..temp`: Daytime stepped
 
 </details>
 
@@ -210,12 +188,6 @@ Add your functions in tags to run function every times event happen:
   为兼容模组添加。  
   许可证 [LGPL-2.1-only](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
-### Retina 文件 (命名空间: retina)
-
-- 见 [Retina](https://modrinth.com/datapack/retina)  
-  为视线追踪添加。  
-  ❗ 仍在 1.20.2，等待更新
-
 ### Minecraft 文件(命名空间: minecraft)
 
 - 如果你要把 Di Library 内置的 tick/load 相关的函数在你的数据包里，请在你的对应标签文件中添加函数
@@ -226,10 +198,7 @@ Add your functions in tags to run function every times event happen:
 - 如果玩家加入世界且只有一个玩家，会执行 `function #minecraft:load` (只重载函数)
 - 存放了一些**标签、物品修饰器、谓词**
 - 如果一个物品有标签`{dilib:{clear:1b}}`，它在物品栏或在世界里会被清除。
-
-- `/function dilib:presets/objectives`:  
-  **该功能在安装时会被加载。**  
-  加载一些计分项。部分显示出的名称是官方的可翻译文本。可以用来统计数据，但请不要修改这些数据
+- 加载一些计分项。部分显示出的名称是官方的可翻译文本。可以用来统计数据，但请不要修改这些数据
 
 - `/function dilib:presets/const`:  
   **该功能在安装时会被加载。**  
@@ -377,22 +346,5 @@ Add your functions in tags to run function every times event happen:
 
   - `storage dilib:data temp.Item`: 物品数据 \*: 更改物品数据会应用于对应的物品（实体）上
 
-| _世界_
-
-- `tag/functions #dilib:world/day_changed`:
-
-  日期变化时触发。
-
-  - `stored_day dilib..data`: 上一刻的日期
-  - `current_day dilib..data`: 当前日期
-  - `step dilib..temp`: 步进的日期
-
-- `tag/functions #dilib:world/daytime_changed`:
-
-  今日时间变化时触发。
-
-  - `stored_daytime dilib..data`: 上一刻的今日时间
-  - `current_daytime dilib..data`: 当前今日时间
-  - `step dilib..temp`: 步进的时间
 
 </details>

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "join_game": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "range": {
+              "min": 1
+            },
+            "value": {
+              "score": "dilib.events.custom..leave_game",
+              "target": "this",
+              "type": "minecraft:score"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "dilib.events:presets/join_game"
+  }
+}
