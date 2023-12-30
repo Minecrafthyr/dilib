@@ -1,0 +1,1 @@
+$tellraw @a[scores={dilib..debug=2..}] {"translate":"dilib.chat_output.debug.warn","fallback":"%s function has a warn: %s","color":"yellow","with":[$(function),$(warn)]}

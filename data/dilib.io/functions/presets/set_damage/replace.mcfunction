@@ -1,1 +1,1 @@
-$item replace entity @s $(slot) with $(id)$(tag) $(Count)
+$item replace $(replace) with $(id)$(tag) $(Count)

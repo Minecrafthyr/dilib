@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "required": false,
+      "id": "minecraft:cod"
+    },
+    {
+      "required": false,
+      "id": "minecraft:puffer_fish"
+    },
+    {
+      "required": false,
+      "id": "minecraft:salmon"
+    },
+    {
+      "required": false,
+      "id": "minecraft:tropical_fish"
+    },
+    {
+      "required": false,
+      "id": "minecraft:tadpole"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "required": false,
+      "id": "minecraft:camel"
+    },
+    {
+      "required": false,
+      "id": "minecraft:horse"
+    },
+    {
+      "required": false,
+      "id": "minecraft:skeleton_horse"
+    },
+    {
+      "required": false,
+      "id": "minecraft:zombie_horse"
+    },
+    {
+      "required": false,
+      "id": "#dilib:animal/abstract_horse/abstract_chested_horse"
+    }
+  ]
+}

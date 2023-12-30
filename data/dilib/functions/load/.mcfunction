@@ -1,0 +1,1 @@
+execute unless data storage dilib:data load.installed run function dilib:load/install

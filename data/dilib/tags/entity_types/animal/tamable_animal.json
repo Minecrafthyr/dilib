@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "required": false,
+      "id": "minecraft:cat"
+    },
+    {
+      "required": false,
+      "id": "#dilib:animal/tamable_animal/shoulder_riding_entity"
+    },
+    {
+      "required": false,
+      "id": "minecraft:wolf"
+    },
+    {
+      "required": false,
+      "id": "minecraft:tadpole"
+    }
+  ]
+}
