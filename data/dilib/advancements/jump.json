@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "jump": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "dilib.custom..jump": {
+                "min": 1
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "dilib:adv/jump"
+  }
+}

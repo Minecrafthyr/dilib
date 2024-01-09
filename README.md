@@ -1,25 +1,26 @@
-<h1>Di Library</h1>
+# Di Library
 
 This is a small multifunctional datapack library reduced repetitive works.
 
-- Version number: 3.0
+Self-using.
+
+- Version: 3.0
 - Game versions: 1.20.3-1.20.4
-- Author: [Minecraft_hyr](https://github.com/Minecrafthyr)
-- Project Links: [Modrinth](https://modrinth.com/datapack/dilib), [Github](https://github.com/Minecrafthyr/Di-Library)
+- Project Links: 
+  - [Modrinth](https://modrinth.com/datapack/dilib)
+  - [Github](https://github.com/Minecrafthyr/dilib)
 
-<h2>Menu</h2>
+## Feature List
 
-- [Fabric Convention Tags (c)](#fabric-convention-tags-c)
-- [Minecraft files (minecraft)](#minecraft-files-minecraft)
-- [Di Library main (dilib)](#di-library-main-dilib)
+- [Fabric Convention Tags](#fabric-convention-tags)
+- [Minecraft files](#minecraft-files-minecraft)
+- [Di Library](#di-library-dilib)
   - [functions](#functions)
   - [item\_modifiers](#item_modifiers)
   - [predicates](#predicates)
   - [tags](#tags)
-- [Di Library Constant (dilib.const)](#di-library-constant-dilibconst)
-  - [functions](#functions-1)
 
-<h2>Feature List</h2>
+Because of the rewrite on 3.0, this feature list also need to rewrite. (-\_-)
 
 ### Fabric Convention Tags (c)
 
@@ -30,16 +31,33 @@ This is a small multifunctional datapack library reduced repetitive works.
 ### Minecraft files (minecraft)
 
 - If you want to embed tick/load function Di Library in your datapack, please add functions in minecraft tag file
+- Some other improvements?
 
-### Di Library main (dilib)
+### Di Library (dilib)
 
 #### functions
 
-presets
+Func
 
-- `dilib:presets/kill`: kill this entity and keeps nothing.
-- `dilib:presets/explosion`: Explosion without creeper ghost.
-- `dilib:presets/uuid_pointing`: Inputs: Marco:{`UUID` the UUID of a entity, `command` the command should run on the entity}
+- `dilib:func/0/weather_detect`: Detect is here raining (ignore Y).  
+  Outputs:  
+  **Return** is raining or not.
+- `dilib:func/0/kill`: kill this entity and keeps nothing.
+- `dilib:func/0/explosion`: Explosion without creeper ghost.
+- `dilib:func/0/uuid_pointing`: Run a command by entity nbt `UUID`.  
+  Inputs:  
+  **Marco** {`UUID` the UUID array of a entity, `command` the command should run on the entity}
+- `dilib:func/0/set_damage`: Calculate the damage of a item, and just replace it. 
+  Inputs:  
+  **Marco** {`UUID` the UUID array of a entity, `command` the command should run on the entity}
+
+IO
+
+- `dilib:func/io/math/avg`: Simply calculate average number but anti-overflow.
+- `dilib:func/io/math/sqrt`: Simply calculate square root.
+- `dilib:func/io/math/power`: Simply calculate power.
+- `dilib:func/io/math/unit_fraction`: Simply and inaccurately calculate unit fraction (turn `a` to `1/a`, less precise when a is larger).
+
 
 #### item_modifiers
 
@@ -62,8 +80,3 @@ functions
 - `#dilib:api/load/*`,`#dilib:api/loop/*`:  
   Load function when reload, but in order: [base, pre-library, library, main, extension, ex-extension].  
   Di Library files are in pre-library.
-
-
-### Di Library Constant (dilib.const)
-
-#### functions

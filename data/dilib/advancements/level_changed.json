@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "level_changed": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "dilib.events..stored_level": {
+                  "max": {
+                    "score": "level",
+                    "target": "this",
+                    "type": "minecraft:score"
+                  },
+                  "min": {
+                    "score": "level",
+                    "target": "this",
+                    "type": "minecraft:score"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "dilib:adv/level_changed"
+  }
+}

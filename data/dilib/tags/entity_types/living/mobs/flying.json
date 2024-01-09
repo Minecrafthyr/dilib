@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:ghast",
+      "required": false
+    },
+    {
+      "id": "minecraft:phantom",
+      "required": false
+    }
+  ]
+}
