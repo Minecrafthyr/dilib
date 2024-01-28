@@ -1,6 +1,7 @@
 tag @s add dilib..this
 
   data modify storage dilib:data Item set from entity @s Item
+  execute if data storage dilib:data Item.tag{} run data remove storage dilib:data Item.tag
 
   execute if data storage dilib:data Item.tag.dilib run function dilib:loop/1t/func/
   

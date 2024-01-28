@@ -9,7 +9,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "dilib.events..stored_level": {
+                "dilib..stored_level": {
                   "max": {
                     "score": "level",
                     "target": "this",

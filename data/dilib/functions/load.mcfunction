@@ -1,7 +1,5 @@
-execute unless data storage dilib:data load{version:8} run function dilib:load/
-
-
 function #dilib:load/base
+execute unless data storage dilib:data load{version:8} run function dilib:load/
 function #dilib:load/pre-library
 function #dilib:load/library
 function #dilib:load/main

@@ -2300,5 +2300,3 @@ scoreboard players set -2^0 const 1
 scoreboard players set 24000 const 24000
 scoreboard players set 1728000 const 1728000
 scoreboard players set 86400 const 86400
-
-function #dilib:api/const
